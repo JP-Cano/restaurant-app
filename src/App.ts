@@ -4,8 +4,8 @@ import express, { Application, json } from 'express';
 import { Server } from 'http';
 import morgan from 'morgan';
 
-import { HealthCheck } from './healthCheck/HealthCheck';
 import { Database } from './shared/config/database/Database';
+import { HealthCheck } from './shared/config/healthCheck/HealthCheck';
 import { logger } from './shared/config/logger/Logger';
 import { Path } from './shared/enums/web/Path';
 import { STR_UND } from './shared/types/Types';

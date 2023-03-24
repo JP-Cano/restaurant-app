@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 
-import { version } from '../../package.json';
-import { HttpStatus } from '../shared/enums/web/HttpStatus';
+import { version } from '../../../../package.json';
+import { HttpStatus } from '../../enums/web/HttpStatus';
 
-export abstract class HealthCheck {
+export class HealthCheck {
   private static readonly Version: unknown = version;
   public static getStatus = (_req: Request, res: Response): Response => {
     try {
